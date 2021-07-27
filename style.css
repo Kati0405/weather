@@ -17,12 +17,9 @@ body, h1, h2 {
 .form input[type=text] {
   height: 30px;
   width: 200px;
-  border: none;
+  border: 1px solid grey;
   border-radius: 10px;
-  background: #0a0a91;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 10, 145, 0.787553)), to(#00fffc));
-  background: linear-gradient(90deg, rgba(10, 10, 145, 0.787553) 0%, #00fffc 100%);
-  color: white;
+  color: black;
 }
 
 .form input[type=text]:focus {
@@ -31,29 +28,29 @@ body, h1, h2 {
 
 .form ::-webkit-input-placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: black;
 }
 
 .form :-ms-input-placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: black;
 }
 
 .form ::-ms-input-placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: black;
 }
 
 .form ::placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: black;
 }
 
 .form input[type=button] {
   height: 30px;
   width: 40px;
   border: none;
-  background-color: aqua;
+  background-color: blue;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
