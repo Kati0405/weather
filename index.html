@@ -8,9 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="date"></p>
-    <input type="text" placeholder="Type a city">
-    <input type="button" value="OK">
+<header>
+    <div class="form">
+        <input type="text" placeholder="Type a city">
+        <input type="button" value="OK">
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row weather">
+                        <div class="weather-image">
+                            <div class="img-icon"></div>
+                            <div class="description"></div>
+                        </div>
+                        <div class ="weather-item temperature">Temperature: <span class="temp"></span></div>
+                        <div class ="weather-item feels">Feels like: <span class="feels_like"></span></div>
+                        <div class="weather-item humid">Humidity: <span class="humidity"></span></div>
+                        <div class="weather-item pres">Presure: <span class="pressure"></span></div>
+                        <div class="weather-item spd">Wind speed: <span class="speed"></span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+    
     <script src="app.js"></script>
 </body>
 </html>

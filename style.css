@@ -1,1 +1,126 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, h1, h2 {
+  margin: 0;
+}
+
+.form {
+  height: 30px;
+  width: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form input[type=text] {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background: #0a0a91;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 10, 145, 0.787553)), to(#00fffc));
+  background: linear-gradient(90deg, rgba(10, 10, 145, 0.787553) 0%, #00fffc 100%);
+  color: white;
+}
+
+.form input[type=text]:focus {
+  outline: none;
+}
+
+.form ::-webkit-input-placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.form :-ms-input-placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.form ::-ms-input-placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.form ::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.form input[type=button] {
+  height: 30px;
+  width: 40px;
+  border: none;
+  background-color: aqua;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form input[type=button]:hover {
+  background-color: #0a0a91;
+}
+
+main {
+  background: #0a0a91;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 10, 145, 0.787553)), to(#00fffc));
+  background: linear-gradient(90deg, rgba(10, 10, 145, 0.787553) 0%, #00fffc 100%);
+  border-radius: 10px;
+  color: white;
+  height: 400px;
+  width: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .weather-image {
+  height: 100px;
+  width: 250px;
+  margin-top: 30px;
+}
+
+main .temperature {
+  font-weight: bold;
+}
+
+main .description {
+  font-weight: bold;
+}
+
+main .weather-item {
+  padding-bottom: 15px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-xs-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-xs-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*# sourceMappingURL=style.css.map */

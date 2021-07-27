@@ -1,31 +1,11 @@
-// const date = new Date();
-// const [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
-document.getElementById("date").innerHTML = Date();
-
-// function showAvatar() {
-// fetch("https://api.github.com/users/Kati0405")
-//   .then((res) => res.json())
-//   .then((data) => {
-//       let img = document.createElement("img");
-//       let avatar = data.avatar_url;
-//       img.setAttribute("src", avatar);
-//       document.body.append(img);
-//   });
-// }
-
-// document.querySelector("button").addEventListener("click", showAvatar)
-
-function appendImg(iconId) {
-let img = document.createElement("img");
-img.setAttribute("src", "http://openweathermap.org/img/w/" + iconId +".png");
-document.body.append(img);
+function setImg(cls, iconId) {
+let div = document.querySelector("."+cls)
+div.innerHTML = `<img src="http://openweathermap.org/img/w/${iconId}.png"/>`;
 }
 
-function appendDiv(cls, content){
-    let div = document.createElement("div");
-        div.setAttribute("class", cls);
-        div.textContent = content;
-        document.body.append(div);
+function setContent(cls, content){
+    let div = document.querySelector("."+cls);
+    div.textContent = content;
 }
 
 function showWeather(){
@@ -33,14 +13,13 @@ function showWeather(){
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inp.value + "&units=metric&APPID=5d066958a60d315387d9492393935c19")
     .then((res) => res.json())
     .then((data) => {
-        appendDiv("temp", data.main.temp);
-        appendDiv("pressure", data.main.pressure);
-        appendDiv("humidity", data.main.humidity);
-        appendDiv("feels_like", data.main.feels_like);
-        appendDiv("speed", data.wind.speed);
-        appendDiv("deg", data.wind.deg);
-        appendDiv("description", data.weather[0].description);
-        appendImg(data.weather[0].icon)
+        setContent("temp", data.main.temp+" "+"C");
+        setContent("pressure", data.main.pressure+" "+"hPa");
+        setContent("humidity", data.main.humidity+"%");
+        setContent("feels_like", data.main.feels_like+" "+"C");
+        setContent("speed", data.wind.speed+" "+"km/h");
+        setContent("description", data.weather[0].description);
+        setImg("img-icon", data.weather[0].icon)
     })
 }
 

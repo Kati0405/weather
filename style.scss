@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body,h1,h2 {
+    margin: 0;
+}
+
+.form {
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+        input[type=text] {
+            height: 30px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+            background: rgb(10,10,145);
+            background: linear-gradient(90deg, rgba(10,10,145,0.7875525210084033) 0%, rgba(0,255,252,1) 100%);
+            color: white;
+        }
+        input[type=text]:focus {
+                outline:none;
+            }
+        
+            ::placeholder {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+
+
+        }
+    
+        input[type=button] {
+            height: 30px;
+            width: 40px;
+            border: none;
+            background-color: aqua;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight:bold;
+            border-radius: 10px;
+            cursor: pointer;
+        
+        }
+        input[type=button]:hover {
+            background-color: rgb(10,10,145);
+        }
+    
+}
+
+main {
+    background: rgb(10,10,145);
+    background: linear-gradient(90deg, rgba(10,10,145,0.7875525210084033) 0%, rgba(0,255,252,1) 100%);
+    border-radius: 10px;
+    color: white;
+    height: 400px;
+    width: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        // .time {
+        //     height: 100px;
+        //     width: 570px;
+        // }
+
+        .weather-image {
+            height: 100px;
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        .temperature {
+            font-weight: bold;
+        }
+        
+        .description {
+            font-weight: bold;
+        }
+
+        .weather-item {
+            padding-bottom: 15px;
+        }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
